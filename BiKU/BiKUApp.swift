@@ -11,7 +11,7 @@ import SwiftUI
 struct BiKUApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            LaunchScreen()
         }
     }
 }
