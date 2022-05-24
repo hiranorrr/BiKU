@@ -14,9 +14,15 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
-                Text("BiKU")
+                Spacer()
+                Image(systemName : "bicycle.circle")
+                    .font(Font.system(size: 70, weight: .black))
+                Text("Login")
                     .font(.system(size: 48,
                                   weight: .heavy))
+                Text("")
+                Text("Please enter your mail address and password.")
+                    .font(.system(size:16))
 
                 VStack(spacing: 24) {
                     TextField("Mail address", text: $inputEmail)
@@ -28,7 +34,7 @@ struct LoginView: View {
                         .frame(maxWidth: 280)
 
                 }
-                .frame(height: 200)
+                .frame(height: 160)
 
                 Button(action: {
                    print("Login処理")
@@ -42,9 +48,9 @@ struct LoginView: View {
                         .background(Color.accentColor)
                         .cornerRadius(8)
                 })
-
                 Spacer()
             }
+            .ignoresSafeArea()
         }
     }
 }
