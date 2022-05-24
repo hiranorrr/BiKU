@@ -12,8 +12,9 @@ import CoreLocation
 struct Parking: Hashable, Codable, Identifiable{
     var id: Int
     var name: String
+    var amount: Int
     fileprivate var coordinates: Coordinates
-    var isFavorite: Bool
+    var isParking: Bool
     
     var locationCoordinate: CLLocationCoordinate2D {
             CLLocationCoordinate2D(

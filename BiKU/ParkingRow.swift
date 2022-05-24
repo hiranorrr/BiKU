@@ -15,7 +15,8 @@ struct ParkingRow: View {
         HStack {
             Text(parking.name)
             Spacer()
-            if parking.isFavorite {
+            Text(String(parking.amount))
+            if parking.isParking {
                 Image(systemName: "bicycle.circle.fill")
                     .imageScale(.medium)
                     .foregroundColor(.blue)
