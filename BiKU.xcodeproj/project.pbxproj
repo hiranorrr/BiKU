@@ -14,6 +14,7 @@
 		8EDFF53128339E5600B40DE7 /* BiKUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53028339E5600B40DE7 /* BiKUTests.swift */; };
 		8EDFF53B28339E5600B40DE7 /* BiKUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53A28339E5600B40DE7 /* BiKUUITests.swift */; };
 		8EDFF53D28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53C28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift */; };
+		ECD9BCDD283CA3E1003C3F12 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9BCDC283CA3E1003C3F12 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8EDFF53628339E5600B40DE7 /* BiKUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiKUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDFF53A28339E5600B40DE7 /* BiKUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUUITests.swift; sourceTree = "<group>"; };
 		8EDFF53C28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECD9BCDC283CA3E1003C3F12 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				8EDFF51F28339E5400B40DE7 /* BiKUApp.swift */,
+				ECD9BCDC283CA3E1003C3F12 /* LaunchScreen.swift */,
 				8EDFF52128339E5400B40DE7 /* ContentView.swift */,
 				8EDFF52328339E5500B40DE7 /* Assets.xcassets */,
 				8EDFF52528339E5500B40DE7 /* Preview Content */,
@@ -259,6 +262,7 @@
 			files = (
 				8EDFF52228339E5400B40DE7 /* ContentView.swift in Sources */,
 				8EDFF52028339E5400B40DE7 /* BiKUApp.swift in Sources */,
+				ECD9BCDD283CA3E1003C3F12 /* LaunchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
