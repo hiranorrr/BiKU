@@ -1,0 +1,53 @@
+[
+    {
+        "name": "8号館前",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": true,
+        "coordinates": {
+            "latitude": 35.02705,
+            "longitude": 135.7815
+        }
+    },
+    {
+        "name": "7号館前",
+        "id": 1002,
+        "isFeatured": true,
+        "isFavorite": false,
+        "coordinates": {
+            "latitude": 35.02705,
+            "longitude": 135.7815
+        }
+    },
+    {
+        "name": "図書館前",
+        "id": 1003,
+        "isFeatured": true,
+        "isFavorite": false,
+        "coordinates": {
+            "latitude": 35.02705,
+            "longitude": 135.7815
+        }
+    },
+    {
+        "name": "クスノキ前",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": false,
+        "coordinates": {
+            "latitude": 35.02705,
+            "longitude": 135.7815
+        }
+    },
+    {
+        "name": "10号館前",
+        "id": 1005,
+        "isFeatured": true,
+        "isFavorite": false,
+        "coordinates": {
+            "latitude": 35.02705,
+            "longitude": 135.7815
+        }
+    }
+]
+
