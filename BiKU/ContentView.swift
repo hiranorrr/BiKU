@@ -49,7 +49,7 @@ struct LoginView: View {
                 }
             }
         } else {
-            MapView()
+            ParkingDetail()
         }
     }
 }
