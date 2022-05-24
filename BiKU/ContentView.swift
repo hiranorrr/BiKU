@@ -10,41 +10,46 @@ import SwiftUI
 struct LoginView: View {
     @State var inputEmail: String = ""
     @State var inputPassword: String = ""
+    @State private var isLogin = true
 
     var body: some View {
-        NavigationView {
-            VStack(alignment: .center) {
-                Text("BiKU")
-                    .font(.system(size: 48,
-                                  weight: .heavy))
+        if (isLogin) {
+            NavigationView {
+                VStack(alignment: .center) {
+                    Text("BiKU")
+                        .font(.system(size: 48,
+                                      weight: .heavy))
 
-                VStack(spacing: 24) {
-                    TextField("Mail address", text: $inputEmail)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(maxWidth: 280)
+                    VStack(spacing: 24) {
+                        TextField("Mail address", text: $inputEmail)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(maxWidth: 280)
 
-                    SecureField("Password", text: $inputPassword)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(maxWidth: 280)
+                        SecureField("Password", text: $inputPassword)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(maxWidth: 280)
 
+                    }
+                    .frame(height: 200)
+                    
+                            Button(action: {
+                                print("Login処理")
+                                isLogin = false
+                            },
+                            label: {
+                                Text("Login")
+                                    .fontWeight(.medium)
+                                    .frame(minWidth: 160)
+                                    .foregroundColor(.white)
+                                    .padding(12)
+                                    .background(Color.accentColor)
+                                    .cornerRadius(8)
+                            })
+                    Spacer()
                 }
-                .frame(height: 200)
-
-                Button(action: {
-                   print("Login処理")
-                },
-                label: {
-                    Text("Login")
-                        .fontWeight(.medium)
-                        .frame(minWidth: 160)
-                        .foregroundColor(.white)
-                        .padding(12)
-                        .background(Color.accentColor)
-                        .cornerRadius(8)
-                })
-
-                Spacer()
             }
+        } else {
+            MapView()
         }
     }
 }
