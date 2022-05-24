@@ -2,7 +2,7 @@
 //  LaunchScreen.swift
 //  BiKU
 //
-//  Created by yamauchi on 2022/05/24.
+//  Created by 中島悠奎 on 2022/05/24.
 //
 
 import Foundation

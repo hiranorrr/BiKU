@@ -16,21 +16,27 @@ struct LoginView: View {
         if (isLogin) {
             NavigationView {
                 VStack(alignment: .center) {
-                    Text("BiKU")
-                        .font(.system(size: 48,
-                                      weight: .heavy))
+                                Spacer()
+                                Image(systemName : "bicycle.circle")
+                                    .font(Font.system(size: 70, weight: .black))
+                                Text("Login")
+                                    .font(.system(size: 48,
+                                                  weight: .heavy))
+                                Text("")
+                                Text("Please enter your mail address and password.")
+                                    .font(.system(size:16))
 
-                    VStack(spacing: 24) {
-                        TextField("Mail address", text: $inputEmail)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .frame(maxWidth: 280)
+                                VStack(spacing: 24) {
+                                    TextField("Mail address", text: $inputEmail)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .frame(maxWidth: 280)
 
-                        SecureField("Password", text: $inputPassword)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .frame(maxWidth: 280)
+                                    SecureField("Password", text: $inputPassword)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .frame(maxWidth: 280)
 
-                    }
-                    .frame(height: 200)
+                                }
+                                .frame(height: 160)
                     
                             Button(action: {
                                 print("Login処理")
