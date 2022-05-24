@@ -14,11 +14,17 @@ struct ParkingDetail: View {
     var body: some View {
         VStack{
             VStack(alignment: .leading) {
-                Text("Kyoto Univercity Map")
-                MapView().edgesIgnoringSafeArea(.top).frame(height: 300)
+                Text("parking lot 1").bold().underline().font(.largeTitle)
+                MapView().edgesIgnoringSafeArea(.top).frame(height: 300).padding()
             }
-            List(parkingData) { parking in
-                        ParkingRow(parking: parking)
+//            List(parkingData) { parking in
+//                        ParkingRow(parking: parking)
+//            }
+            Text("12 bikes").bold().font(.title)
+            Spacer()
+            //TODO:actionにデータベースの値更新処理を書く
+            Button(action: {}){
+                Text("Park").font(.largeTitle).foregroundColor(Color.white).padding(.horizontal).background(Color.blue)
             }
             Spacer()
         }

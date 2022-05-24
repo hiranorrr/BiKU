@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import CoreLocation
  
-let parkingkData: [Parking] = load("parkingData.json")
+let parkingData: [Parking] = load("parkingData.json")
  
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
