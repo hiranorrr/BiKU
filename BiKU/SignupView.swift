@@ -1,13 +1,14 @@
 //
-//  ContentView.swift
+//  SignupView.swift
 //  BiKU
 //
-//  Created by 平野瑠登 on 2022/05/17.
+//  Created by 中島悠奎 on 2022/05/26.
 //
 
+import Foundation
 import SwiftUI
 
-struct LoginView: View {
+struct SignupView: View {
     @State var inputEmail: String = ""
     @State var inputPassword: String = ""
     @State private var isLogin = true
@@ -19,7 +20,7 @@ struct LoginView: View {
                                 Spacer()
                                 Image(systemName : "bicycle.circle")
                                     .font(Font.system(size: 70, weight: .black))
-                                Text("Login")
+                                Text("Sign up")
                                     .font(.system(size: 48,
                                                   weight: .heavy))
                                 Text("")
@@ -39,11 +40,11 @@ struct LoginView: View {
                                 .frame(height: 160)
                     
                             Button(action: {
-                                print("Login処理")
+                                print("Signup処理")
                                 isLogin = false
                             },
                             label: {
-                                Text("Login")
+                                Text("Sign up")
                                     .fontWeight(.medium)
                                     .frame(minWidth: 160)
                                     .foregroundColor(.white)
@@ -60,8 +61,8 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignupView()
     }
 }
