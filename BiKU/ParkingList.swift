@@ -13,10 +13,9 @@ struct ParkingList: View {
     var body: some View {
         VStack {
             Text(parking.name).bold().underline().font(.largeTitle)
-            MapView()
+            MapView(latitude: parking.coordinates.latitude, longitude: parking.coordinates.longitude, place: parking.name)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300).padding(.vertical)
-            
             // DB処理　駐輪台数を取得してほしい
             Text("\(parking.amount) bikes").bold().font(.title)
             Spacer()
