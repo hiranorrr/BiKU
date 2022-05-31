@@ -9,15 +9,29 @@ import Foundation
 import SwiftUI
  
 struct ParkingList: View {
+    var parking: Parking
     var body: some View {
-        List(parkingData) { parking in
-                    ParkingRow(parking: parking)
+        VStack {
+            Text(parking.name).bold().underline().font(.largeTitle)
+            MapView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300).padding()
+            
+            Text("12 bikes").bold().font(.title)
+            Spacer()
+            
+            Button(action: {}){
+                Text("Park").font(.largeTitle).foregroundColor(Color.white).padding(.horizontal).background(Color.blue)
+            }
+            Spacer()
         }
     }
+    
+    
 }
  
 struct ParkingList_Previews: PreviewProvider {
     static var previews: some View {
-        ParkingList()
+        ParkingList(parking: parkingData[0])
     }
 }
