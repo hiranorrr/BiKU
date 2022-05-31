@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 import SwiftUI
 import CoreLocation
- 
+
+// DB処理　ほんまはデータベースから取ってくる
 let parkingData: [Parking] = load("parkingData.json")
  
 func load<T: Decodable>(_ filename: String) -> T {

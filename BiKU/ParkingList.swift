@@ -17,9 +17,11 @@ struct ParkingList: View {
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300).padding()
             
+            // DB処理　駐輪台数を取得してほしい
             Text("12 bikes").bold().font(.title)
             Spacer()
             
+            //　DB処理　新しい駐輪台数を書き込む
             Button(action: {}){
                 Text("Park").font(.largeTitle).foregroundColor(Color.white).padding(.horizontal).background(Color.blue)
             }

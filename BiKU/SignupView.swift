@@ -39,6 +39,7 @@ struct SignupView: View {
                                 }
                                 .frame(height: 160)
                     
+                            // DB処理 サインアップ
                             Button(action: {
                                 print("Signup処理")
                                 isLogin = false
