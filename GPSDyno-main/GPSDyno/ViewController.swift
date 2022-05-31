@@ -45,9 +45,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
         
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
-        
+        locationManager.allowsBackgroundLocationUpdates = true
+
         //enable location services and get best Accuracy possible
         if CLLocationManager.locationServicesEnabled()
+            
         {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
