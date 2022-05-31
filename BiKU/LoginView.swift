@@ -12,6 +12,7 @@ import FirebaseAuth
 struct LoginView: View {
     @State var inputEmail: String = ""
     @State var inputPassword: String = ""
+    @State var errorMessage: String = ""
     @State private var isLogin = true
     @State private var isSignup = true
 
