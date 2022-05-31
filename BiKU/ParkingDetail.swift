@@ -12,15 +12,20 @@ import CoreLocation
 
 struct ParkingDetail: View {
     var body: some View {
-        VStack{
-            VStack(alignment: .leading) {
-                Text("Kyoto Univercity Map")
-                MapView().edgesIgnoringSafeArea(.top).frame(height: 300)
-            }
-            List(parkingData) { parking in
-                        ParkingRow(parking: parking)
-            }
-            Spacer()
+        NavigationView{
+            VStack{
+                MapView().edgesIgnoringSafeArea(.top).frame(height: 300).padding(.vertical)
+                
+                
+                    List(parkingData) { parking in
+                                NavigationLink(
+                                    destination:ParkingList(parking: parking)
+                                ){
+                                ParkingRow(parking: parking)
+                                }
+                    }
+    
+            }.navigationBarTitle(Text("Kyoto Unversity Map"))
         }
     }
 }
