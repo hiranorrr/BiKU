@@ -5,6 +5,9 @@
 //  Created by Marcelo Ferreira Barreto on 24/11/20.
 //
 
+
+//bに関係するところだけ抽出
+
 import UIKit
 import CoreLocation
 
@@ -97,6 +100,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             {
                 self.lbSpeed.text = "Speed:\( vLocation.speed ) m/s Accuracy:\(vLocation.speedAccuracy ) m/s"
                 self.lbSpeed.text = String(format: "Spd: %.1f m/s Prec.: %.1f m/s", ( vLocation.speed ),(vLocation.speedAccuracy ))
+                //ここだけ必要
+                        
             }
         }
         
@@ -124,7 +129,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
                 DispatchQueue.main.async {
                     
                     //put all in interface
-                    self.lbInstant.text = String(format: "Instant pow: %.2f cv", PowerInCv)
+                       self.lbInstant.text = String(format: "Instant pow: %.2f cv", PowerInCv)
                     self.lbInstant.textColor = .black
                     
                     if PowerInCv > self.varMaxPower
@@ -138,6 +143,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
                         // my "ugly log", this is just a "POC" after all
                         let text = self.tvPower.text ?? ""
                         self.tvPower.text = String(format: "MP: %.2f cv Spd: %.2f Acc:%.2f m/s^2 Prec:%.2fm\n", PowerInCv,(vLocation.speed*3.6),a,vLocation.horizontalAccuracy) + text
+                        //デバックの部分の値
                         self.varPeakPower = PowerInCv
                         if self.varTimerPeak != nil
                         {
@@ -184,7 +190,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             }
             else{
                 DispatchQueue.main.async {
-                    self.lbInstant.text = String(format: "Instant pow: %.2f cv", PowerInCv)
+                    //self.lbInstant.text = String(format: "Instant pow: %.2f cv", PowerInCv)
                     self.lbInstant.textColor = .red
                 }
             }
@@ -198,6 +204,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             }
         }
         
+        let b = String(format: "Spd: %.1f m/s Prec.: %.1f m/s", ( vLocation.speed ),(vLocation.speedAccuracy ))
+        //Prec=位置情報の精度　Spd=移動速度(m/s)
+        print(b)
+        
+
         //finishing touches
         //save the last time interval
         varLastTimeStamp = vLocation.timestamp
@@ -208,7 +219,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             self.lbDebug.text =  "Update:\(self.update)"
         }
     }
-
     //keyboard and stuff
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
