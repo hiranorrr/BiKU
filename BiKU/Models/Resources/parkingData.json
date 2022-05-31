@@ -1,0 +1,83 @@
+[
+    {
+        "name": "正門前東",
+        "id": 1001,
+        "amount": 0,
+        "isParking": true,
+        "coordinates": {
+            "latitude": 35.01325,
+            "longitude": 135.465394
+        }
+    },
+    {
+        "name": "時計台ショップ前",
+        "id": 1002,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.013497,
+            "longitude": 135.465157
+        }
+    },
+    {
+        "name": "中央食堂前",
+        "id": 1003,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.013695,
+            "longitude": 135.465391
+        }
+    },
+    {
+        "name": "7号館前",
+        "id": 1004,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.013968,
+            "longitude": 135.470104
+        }
+    },
+    {
+        "name": "文学部棟前",
+        "id": 1005,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.013964,
+            "longitude": 135.465429
+        }
+    },
+    {
+        "name": "百万遍門前",
+        "id": 1006,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.014285,
+            "longitude": 135.464902
+        }
+    },
+    {
+        "name": "図書館前",
+        "id": 1007,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.013673,
+            "longitude": 135.464764
+        }
+    },
+    {
+        "name": "正門前西",
+        "id": 1008,
+        "amount": 0,
+        "isParking": false,
+        "coordinates": {
+            "latitude": 35.013269,
+            "longitude": 135.464868
+        }
+    }
+]
+
