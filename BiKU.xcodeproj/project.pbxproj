@@ -14,8 +14,9 @@
 		26F35838283C9E00000D0649 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F35837283C9E00000D0649 /* Parking.swift */; };
 		26F3583D283C9F7D000D0649 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3583C283C9F7D000D0649 /* Data.swift */; };
 		26F35840283CA02F000D0649 /* parkingData.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F3583F283CA02F000D0649 /* parkingData.json */; };
+		8E8524802845E70700E27946 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85247F2845E70700E27946 /* SignupView.swift */; };
 		8EDFF52028339E5400B40DE7 /* BiKUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF51F28339E5400B40DE7 /* BiKUApp.swift */; };
-		8EDFF52228339E5400B40DE7 /* LiginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF52128339E5400B40DE7 /* LiginView.swift */; };
+		8EDFF52228339E5400B40DE7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF52128339E5400B40DE7 /* LoginView.swift */; };
 		8EDFF52428339E5500B40DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDFF52328339E5500B40DE7 /* Assets.xcassets */; };
 		8EDFF52728339E5500B40DE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDFF52628339E5500B40DE7 /* Preview Assets.xcassets */; };
 		8EDFF53128339E5600B40DE7 /* BiKUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53028339E5600B40DE7 /* BiKUTests.swift */; };
@@ -49,9 +50,10 @@
 		26F35837283C9E00000D0649 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
 		26F3583C283C9F7D000D0649 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		26F3583F283CA02F000D0649 /* parkingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parkingData.json; sourceTree = "<group>"; };
+		8E85247F2845E70700E27946 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		8EDFF51C28339E5400B40DE7 /* BiKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDFF51F28339E5400B40DE7 /* BiKUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUApp.swift; sourceTree = "<group>"; };
-		8EDFF52128339E5400B40DE7 /* LiginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiginView.swift; sourceTree = "<group>"; };
+		8EDFF52128339E5400B40DE7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8EDFF52328339E5500B40DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EDFF52628339E5500B40DE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EDFF52C28339E5600B40DE7 /* BiKUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiKUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +134,9 @@
 				26F3582F283C9C83000D0649 /* MapView.swift */,
 				26F35831283C9CAE000D0649 /* ParkingList.swift */,
 				26F35833283C9D26000D0649 /* ParkingRow.swift */,
+				8E85247F2845E70700E27946 /* SignupView.swift */,
 				26F35835283C9D9D000D0649 /* ParkingDetail.swift */,
-				8EDFF52128339E5400B40DE7 /* LiginView.swift */,
+				8EDFF52128339E5400B40DE7 /* LoginView.swift */,
 				8EDFF54D283CD62000B40DE7 /* LaunchScreen.swift */,
 				26F35841283CA38F000D0649 /* Models */,
 				8EDFF52328339E5500B40DE7 /* Assets.xcassets */,
@@ -302,7 +305,8 @@
 				26F35832283C9CAE000D0649 /* ParkingList.swift in Sources */,
 				8EDFF54E283CD62000B40DE7 /* LaunchScreen.swift in Sources */,
 				26F35838283C9E00000D0649 /* Parking.swift in Sources */,
-				8EDFF52228339E5400B40DE7 /* LiginView.swift in Sources */,
+				8E8524802845E70700E27946 /* SignupView.swift in Sources */,
+				8EDFF52228339E5400B40DE7 /* LoginView.swift in Sources */,
 				26F35836283C9D9D000D0649 /* ParkingDetail.swift in Sources */,
 				26F35830283C9C83000D0649 /* MapView.swift in Sources */,
 				8EDFF52028339E5400B40DE7 /* BiKUApp.swift in Sources */,
