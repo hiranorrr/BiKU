@@ -21,6 +21,7 @@
 		8EDFF53128339E5600B40DE7 /* BiKUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53028339E5600B40DE7 /* BiKUTests.swift */; };
 		8EDFF53B28339E5600B40DE7 /* BiKUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53A28339E5600B40DE7 /* BiKUUITests.swift */; };
 		8EDFF53D28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF53C28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift */; };
+		8EDFF54E283CD62000B40DE7 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDFF54D283CD62000B40DE7 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		8EDFF53628339E5600B40DE7 /* BiKUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiKUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDFF53A28339E5600B40DE7 /* BiKUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUUITests.swift; sourceTree = "<group>"; };
 		8EDFF53C28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EDFF54D283CD62000B40DE7 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreen.swift; path = BiKU/LaunchScreen.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,9 @@
 		26F35841283CA38F000D0649 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				26F35837283C9E00000D0649 /* Parking.swift */,
 				26F3583C283C9F7D000D0649 /* Data.swift */,
 				26F3583E283CA02F000D0649 /* Resources */,
-				26F35837283C9E00000D0649 /* Parking.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +134,7 @@
 				26F35833283C9D26000D0649 /* ParkingRow.swift */,
 				26F35835283C9D9D000D0649 /* ParkingDetail.swift */,
 				8EDFF52128339E5400B40DE7 /* ContentView.swift */,
+				8EDFF54D283CD62000B40DE7 /* LaunchScreen.swift */,
 				26F35841283CA38F000D0649 /* Models */,
 				8EDFF52328339E5500B40DE7 /* Assets.xcassets */,
 				8EDFF52528339E5500B40DE7 /* Preview Content */,
@@ -297,6 +300,7 @@
 			files = (
 				26F35834283C9D26000D0649 /* ParkingRow.swift in Sources */,
 				26F35832283C9CAE000D0649 /* ParkingList.swift in Sources */,
+				8EDFF54E283CD62000B40DE7 /* LaunchScreen.swift in Sources */,
 				26F35838283C9E00000D0649 /* Parking.swift in Sources */,
 				8EDFF52228339E5400B40DE7 /* ContentView.swift in Sources */,
 				26F35836283C9D9D000D0649 /* ParkingDetail.swift in Sources */,
