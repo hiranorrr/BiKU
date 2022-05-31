@@ -15,10 +15,10 @@ struct ParkingList: View {
             Text(parking.name).bold().underline().font(.largeTitle)
             MapView()
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 300).padding()
+                .frame(height: 300).padding(.vertical)
             
             // DB処理　駐輪台数を取得してほしい
-            Text("12 bikes").bold().font(.title)
+            Text("\(parking.amount) bikes").bold().font(.title)
             Spacer()
             
             //　DB処理　新しい駐輪台数を書き込む
