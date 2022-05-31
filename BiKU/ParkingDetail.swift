@@ -14,7 +14,7 @@ struct ParkingDetail: View {
     var body: some View {
         NavigationView{
             VStack{
-                MapView().edgesIgnoringSafeArea(.top).frame(height: 300).padding(.vertical)
+                MapView(latitude: 0, longitude: 0, place: "null").edgesIgnoringSafeArea(.top).frame(height: 300).padding(.vertical)
                 
                 
                     List(parkingData) { parking in

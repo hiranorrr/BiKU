@@ -5,8 +5,8 @@
         "amount": 0,
         "isParking": true,
         "coordinates": {
-            "latitude": 35.01325,
-            "longitude": 135.465394
+            "latitude": 35.02567058210676,
+            "longitude": 135.7814744055541
         }
     },
     {
@@ -15,8 +15,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.013497,
-            "longitude": 135.465157
+            "latitude": 35.02633655850319,
+            "longitude": 135.78119528101462
         }
     },
     {
@@ -25,8 +25,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.013695,
-            "longitude": 135.465391
+            "latitude": 35.02696283357128,
+            "longitude": 135.7816899915369
         }
     },
     {
@@ -35,8 +35,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.013968,
-            "longitude": 135.470104
+            "latitude": 35.027741539302646,
+            "longitude": 135.7836771069019
         }
     },
     {
@@ -45,8 +45,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.013964,
-            "longitude": 135.465429
+            "latitude": 35.027593763502466,
+            "longitude": 135.78122481618718
         }
     },
     {
@@ -55,8 +55,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.014285,
-            "longitude": 135.464902
+            "latitude": 35.02851718630353,
+            "longitude": 135.78018200115002
         }
     },
     {
@@ -65,8 +65,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.013673,
-            "longitude": 135.464764
+            "latitude": 35.02651777904387,
+            "longitude": 135.78004527244002
         }
     },
     {
@@ -75,8 +75,8 @@
         "amount": 0,
         "isParking": false,
         "coordinates": {
-            "latitude": 35.013269,
-            "longitude": 135.464868
+            "latitude": 35.02566171036987,
+            "longitude": 135.78022080715755
         }
     }
 ]
