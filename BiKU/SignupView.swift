@@ -7,10 +7,12 @@
 
 import Foundation
 import SwiftUI
+import FirebaseAuth
 
 struct SignupView: View {
     @State var inputEmail: String = ""
     @State var inputPassword: String = ""
+    @State public var errorMessage:String = ""
     @State private var isLogin = true
 
     var body: some View {
@@ -40,9 +42,16 @@ struct SignupView: View {
                                 .frame(height: 160)
                     
                             // DB処理 サインアップ
-                            Button(action: {
-                                print("Signup処理")
-                                isLogin = false
+                            Button(action:{
+                                if(self.inputEmail == ""){
+                                    self.errorMessage = "メールアドレスが入力されていません"
+                                } else if(self.inputPassword == ""){
+                                    self.errorMessage = "パスワードが入力されていません"
+                                } else {
+                                    Auth.auth().createUser(withEmail: self.inputEmail, password: self.inputPassword) { authResult, error in
+                                       print(authResult)
+                                    }
+                                }
                             },
                             label: {
                                 Text("Sign up")
