@@ -10,9 +10,11 @@ import SwiftUI
 import MapKit
 import CoreLocation
 import FirebaseFirestore
+import FirebaseAuth
 
 struct ParkingDetail: View {
     @State var parkings: [Parking] = []
+    @State var parking_id: Optional<Int> = nil
     var body: some View {
         NavigationView{
             VStack{
@@ -21,15 +23,16 @@ struct ParkingDetail: View {
                 
                 List(self.parkings) { parking in
                     NavigationLink(
-                        destination:ParkingList(parking: parking, parkings: $parkings)
+                        destination:ParkingList(parking: parking, parkings: $parkings, parking_id: $parking_id)
                     ){
-                        ParkingRow(parking: parking)
+                        ParkingRow(parking: parking, parking_id: $parking_id)
                     }
                 }
     
             }.navigationBarTitle(Text("Kyoto Unversity Map"))
         }.onAppear {
             self.getParkingLots()
+            self.getParkingId()
         }
     }
 
@@ -60,6 +63,22 @@ struct ParkingDetail: View {
 
                 print(parkings)
                 self.parkings = parkings
+            }
+        }
+    }
+    
+    func getParkingId() {
+        let db = Firestore.firestore()
+        if let currentUser = Auth.auth().currentUser {
+            db.collection("users").document(currentUser.uid).getDocument { snapshot, err in
+                if let err = err {
+                    // FIXME: エラーハンドリング
+                    print("Error adding document: \(err)")
+                } else {
+                    print("Document added")
+                    print(snapshot!.data() ?? "")
+                    self.parking_id = snapshot!.data()?["parking_id"] as? Int
+                }
             }
         }
     }
