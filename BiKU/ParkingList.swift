@@ -21,9 +21,15 @@ struct ParkingList: View {
             Spacer()
             
             //　DB処理　新しい駐輪台数を書き込む
-            Button(action: {}){
-                Text("Park").font(.largeTitle).foregroundColor(Color.white).padding(.horizontal).background(Color.blue)
+            HStack{
+                Button(action: {}){
+                    Text("Park").font(.largeTitle).foregroundColor(Color.white).padding(.horizontal).background(Color.blue)
+                }
+                Button(action: {}){
+                    Text("Unpark").font(.largeTitle).foregroundColor(Color.white).padding(.horizontal).background(Color.red)
+                }
             }
+
             Spacer()
         }
     }
