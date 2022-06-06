@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FirebaseAuth
-//import UIKit
 
 struct LoginView: View {
     @State var inputEmail: String = ""
@@ -42,6 +41,7 @@ struct LoginView: View {
                     Button(action: {
                         print("Login処理")
                         isLogin = false
+
                         if(self.inputEmail == ""){
                             self.errorMessage = "メールアドレスが入力されていません"
                             print(self.errorMessage)

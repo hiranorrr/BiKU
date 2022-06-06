@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
 
 struct SignupView: View {
     @State var inputEmail: String = ""
@@ -49,7 +50,12 @@ struct SignupView: View {
                                     self.errorMessage = "パスワードが入力されていません"
                                 } else {
                                     Auth.auth().createUser(withEmail: self.inputEmail, password: self.inputPassword) { authResult, error in
-                                       print(authResult)
+                                        print(authResult)
+                                        
+                                        if (authResult?.user != nil) {
+                                            let uid: String = authResult?.user.uid ?? ""
+                                            addUser(id: uid)
+                                        }
                                     }
                                 }
                             },
@@ -74,5 +80,20 @@ struct SignupView: View {
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
         SignupView()
+    }
+}
+
+func addUser(id: String) {
+    let db = Firestore.firestore()
+
+    db.collection("users").document(id).setData([
+        "name": "Sakamoto2"
+    ]) { err in
+        if let err = err {
+            // FIXME: エラーハンドリング
+            print("Error adding document: \(err)")
+        } else {
+            print("Document added")
+        }
     }
 }
