@@ -29,6 +29,7 @@
 		F36AEF5F2845FBCC0032EF90 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F36AEF5E2845FBCC0032EF90 /* FirebaseAuth */; };
 		F36AEF612845FBCC0032EF90 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F36AEF602845FBCC0032EF90 /* FirebaseFirestore */; };
 		F36AEF632845FBCC0032EF90 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F36AEF622845FBCC0032EF90 /* FirebaseFirestoreSwift */; };
+		F36F1ED1284E27B500F01F76 /* FireStoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F1ED0284E27B500F01F76 /* FireStoreRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8EDFF53A28339E5600B40DE7 /* BiKUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUUITests.swift; sourceTree = "<group>"; };
 		8EDFF53C28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiKUUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F36AEF592845FB430032EF90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F36F1ED0284E27B500F01F76 /* FireStoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		8EDFF51E28339E5400B40DE7 /* BiKU */ = {
 			isa = PBXGroup;
 			children = (
+				F36F1ED2284E2E0E00F01F76 /* Repositories */,
 				8EDFF51F28339E5400B40DE7 /* BiKUApp.swift */,
 				26DAF3A1283CD5780019F43D /* LaunchScreen.swift */,
 				26F3582F283C9C83000D0649 /* MapView.swift */,
@@ -179,6 +182,14 @@
 				8EDFF53C28339E5600B40DE7 /* BiKUUITestsLaunchTests.swift */,
 			);
 			path = BiKUUITests;
+			sourceTree = "<group>";
+		};
+		F36F1ED2284E2E0E00F01F76 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F36F1ED0284E27B500F01F76 /* FireStoreRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				26F35838283C9E00000D0649 /* Parking.swift in Sources */,
 				8EDFF52228339E5400B40DE7 /* LoginView.swift in Sources */,
 				26F35836283C9D9D000D0649 /* ParkingDetail.swift in Sources */,
+				F36F1ED1284E27B500F01F76 /* FireStoreRepository.swift in Sources */,
 				26F35830283C9C83000D0649 /* MapView.swift in Sources */,
 				8EDFF52028339E5400B40DE7 /* BiKUApp.swift in Sources */,
 				26F3583D283C9F7D000D0649 /* Data.swift in Sources */,
